@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
+    <!-- link lấy từ google để áp dụng thay đổi font chữ -->
+</head>
+<style>
+    /* tạo style cho thẻ */
+    body{
+        /* có thể dùng ngăn cách các thẻ bằng dấu , để cho các thẻ đều dùng chung 1 style. VD: body,html,h1,h2 */
+        background-image: url(https://media4.giphy.com/media/TxVVB6PfWMjE4/200.webp?cid=790b7611uwkkn5m89i6n8km6j69p9xemn39ppfa3fr7q05ox&ep=v1_gifs_search&rid=200.webp&ct=g);
+        background-size: cover;
+        text-align: center;
+        /* text-align: căn giữa text và ảnh */
+    }
+    .haine{
+        /* dùng . để đặt tên cho 1 class và sau đấy có thể gọi lại class với style này */
+        text-align: center;
+        font-size: x-large;
+          /* Copy phần font từ google form để apply cho thẻ này */
+        font-family: "Honk", system-ui;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-variation-settings:
+            "MORF" 15,
+            "SHLN" 50;
+}
+</style>
+<body>
+        <a href="https://www.youtube.com/watch?v=RTBl0s8-y1o" title="con mèo ngu">
+        <img src="https://kenh14cdn.com/2020/10/12/photo-1-1602466613894629500851.png" alt="con mèo ngu vl" 
+        width="200" height="200" style="border-radius: 50% ;">
+        <!-- style: style cho thuộc tính -->
+        <!-- border-radius: bo tất cả các góc của ảnh lại còn 50% -->
+    </a>
+    <div class="haine">
+        <!-- class: gọi class và các thuộc tính của class đã được tạo từ trước -->
+        <u>Nguyễn Khủng Mèo</u><br> 
+        <b>18/08/2024</b><br>
+        <b>Hà Nội</b><br>
+        <b>Không giống bố, giống mẹ</b>
+    </div>
+</body>
+</html>
