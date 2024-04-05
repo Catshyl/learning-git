@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- tìm kiếm trên youtube -->
+    <!-- target: blank là để mở sang tab mới sau khi click -->
+    <!-- action: Nơi gửi dữ liệu về -->
+    <!-- method: Cách gửi dữ liệu đi, GET để gửi dữ liệu ko chứa ttin cá nhân, sẽ hiển thị dữ liệu trên thanh URL -->
+    <!-- method: POST để gửi dữ liệu chứa ttin cá nhân như password,... dữ liệu sẽ ẩn trên thanh URL -->
+    <form action="https://www.youtube.com/results" target="_blank" method="get" method="post">
+        <input type="text" name="search_query"/>
+        <input type="submit" value="tìm kiếm"/>
+    </form>
+    <!-- tìm kiếm trên google -->
+    <form action="https://www.google.com.vn/search" target="_blank">
+        <input type="text" name="q"/>
+        <input type="submit" value="tìm kiếm"/>
+    </form>
+    <form action="/submit-form.php" method="post">
+        <!-- Các trường nhập liệu và nút submit ở đây -->
+      </form>
+</body>
+</html>

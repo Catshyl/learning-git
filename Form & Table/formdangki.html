@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Bài 1</h1>
+    <!-- tạo form -->
+        <form>
+            <!-- fieldset: Tạo vòng bo viền bảng -->
+            <fieldset style="width: 350px;">
+            <!-- tạo bảng to -->
+            <table>
+                <!-- tr: tạo dòng trong bảng, đây là dòng đầu tiên của bảng to-->
+                <tr>
+                    <!-- th: tiêu đề bảng, colspan để chỉ định tiêu đề sẽ chiếm 2 cột hàng ngang -->
+                    <th colspan="2">
+                        <h2 style="background-color: rgb(243, 11, 11);color: aliceblue;text-align: center;">Sở thích của bạn</h2>
+                    </th>
+                </tr>
+                <!-- tạo dòng thứ 2 của bảng to-->
+                <tr>
+                    <!-- cột đầu tiên của dòng -->
+                    <td >
+                        <b style="color: rgb(82, 14, 241);">Họ và tên</b>
+                    </td>
+                    <!-- cột thứ 2 của dòng -->
+                    <td>
+                        <input type="text" name="Name" style="width: 250px;">
+                    </td>
+                </tr>
+                <!-- tạo dòng thứ 3 của bảng to-->
+                <tr>
+                    <!-- cột đầu tiên của dòng -->
+                    <td>
+                        <b style="color: rgb(82, 14, 241);">Email</b>
+                    </td>
+                    <!-- cột thứ 2 của dòng -->
+                    <td>
+                        <input type="email" name="email">
+                    </td>
+                </tr>
+                <!-- dòng thứ 4 của bảng to-->
+                <tr>
+                    <!-- cột đầu tiên của dòng -->
+                    <td><b style="color: rgb(82, 14, 241);">Sở thích</b></td>
+                    <!-- cột thứ 2 của dòng -->
+                    <td>
+                    <!-- do giá trị cần đều nhau, phải tạo bảng con trong dòng này -->
+                    <table>
+                        <!-- dòng đầu tiên của bảng con -->
+                        <tr>
+                            <!-- lần lượt các giá trị của từng cột trong dòng đầu tiên -->
+                            <td><input type="checkbox" name="hobby" value="sport">Thể thao</td>
+                            <td><input type="checkbox" name="hobby" value="music">Âm nhạc</td>
+                            <td><input type="checkbox" name="hobby" value="reading">Đọc sách</td>
+                        </tr>
+                        <!-- dòng thứ 2 của bảng con -->
+                        <tr>
+                            <!-- lần lượt các giá trị của từng cột trong dòng thứ 2 -->
+                            <td><input type="checkbox" name="hobby" value="web">Lướt web</td>
+                            <td><input type="checkbox" name="hobby" value="game">Chơi game</td>
+                            <td><input type="checkbox" name="hobby" value="cinema">Điện ảnh</td>
+                         </tr>
+                         <!-- dòng thứ 3 của bảng con -->
+                        <tr>
+                            <!-- lần lượt các giá trị của từng cột trong dòng thứ 3 -->
+                            <td><input type="checkbox" name="hobby" value="traveling">Du lịch</td>
+                            <!-- tạo 2 dòng trống để cho khoảng cách tương đương với các cột của các dòng trên -->
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                    </td>
+                </tr>
+                <!-- dòng thứ 5 của bảng to -->
+                <tr>
+                    <!-- tạo cột trống để cho khoảng cách các giá trị sau cân bằng với các dòng trên -->
+                    <td></td>
+                    <!-- tạo button trong cột thứ 2 của dòng 5 -->
+                    <td>
+                        <button>Gửi thông tin</button>
+                        <button>Nhập lại</button>
+                    </td>
+                </tr>
+            </table>   
+        </fieldset>
+    </form>
+
+<h1>Bài 2</h1>
+    <form>
+        <table style="background-color: rgb(237, 253, 147);">
+            <tr>
+                <th colspan="2" style="color: blue;background-color: aqua; text-align: left;">ĐĂNG KÝ HỌC VIÊN</th>
+            </tr>
+            <tr>
+                <td style="color: blue">Họ và tên</td>
+                <td>
+                    <input type="text" name="hovaten">
+                </td>
+            </tr>
+            <tr>
+                <td style="color: blue">Ngày sinh</td>
+                <td>
+                    <input type="text" name="dob" style="width: 100px;">
+                </td>
+            </tr>
+            <tr>
+                <td style="color: blue">Giới tính</td>
+                <td>
+                    <input type="radio" name="sex" value="Male">Nam
+                    <input type="radio" name="sex" value="Female">Nữ
+                </td>
+            </tr>
+            <tr>
+                <td style="color: blue">Địa chỉ</td>
+                <td>
+                    <textarea name="diachi" id="" cols="30" rows="5"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td style="color: blue">Lớp</td>
+                <td>
+                    <select name="class" id="">
+                        <option value="choose" style="display: none;">-Chọn lớp-</option>
+                        <option value="Class A">A</option>
+                        <option value="Class B">B</option>
+                        <option value="Class C">C</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td style="color: blue">Email</td>
+                <td>
+                    <input type="email" name="email">
+                </td>
+            </tr>
+            <tr>
+                <td style="color: blue">Điện thoại</td>
+                <td>
+                    <input type="number" name="phone">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button>Đăng ký</button>
+                    <button>Nhập lại</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <h1>Bài 3</h1>
+    <form>
+        <fieldset style="width: fit-content;">
+        <hr>
+            <h2>Market Research Survey</h2>
+            <h3>Please take a few moments to complete this satisfaction Survey</h3>
+        <hr>
+        <b>What is your age range?</b>
+        <br>
+        <select name="agerange" id="" style="width: 200px;">
+            <option value="range" style="display: none;">-Range-</option>
+            <option value="1">18-24</option>
+            <option value="2">25-29</option>
+            <option value="3">30-36</option>
+        </select>
+        <br><br>
+        <b>What is your yearly income range?</b>
+        <br>
+        <select name="salaryrange" id="" style="width: 200px;">
+            <option value="range" style="display: none;">-Range-</option>
+            <option value="1">$0 - $25,000</option>
+            <option value="2">$25,000 - $50,000</option>
+            <option value="3">$50,000 - $100,000</option>
+        </select>
+        <br><br>
+        <b>Gender</b>
+        <br>
+        <input type="radio" name="gender" value="male">Male
+        <br>
+        <input type="radio" name="gender" value="female">Female
+        <br><br>
+        <b>Which of the following products have you purchased in the last 2 months. Please check all that apply.</b>
+        <br>
+        <input type="checkbox" name="product1" value="1">Product 1
+        <br>
+        <input type="checkbox" name="product2" value="2">Product 2
+        <br>
+        <input type="checkbox" name="product3" value="2">Product 3
+        <br><br>
+        <b>How often would you use our new product?</b>
+        <br>
+        <input type="radio" name="frequent" value="1">Daily
+        <br>
+        <input type="radio" name="frequent" value="2">Weekly
+        <br>
+        <input type="radio" name="frequent" value="2">Monthly
+        <br><br>
+        <b>What would you pay for the new product?</b>
+        <table>            
+            <tr>
+                <td>$</td>
+                <td>
+                    <input type="text" name="dollars" style="width: 60px;"> -
+                </td>
+                <td>
+                    <input type="text" name="cents" style="width: 20px;">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Dollars</td>
+                <td>Cents</td>
+            </tr>
+    </table>
+    <b>What features would you like to see in the new product.</b>
+    <br>
+    <textarea name="opinion" id="" cols="50" rows="10"></textarea>
+    <br>
+    <b>Please rate your level of agreement with the following statements</b>
+    <table border="1" style="border-collapse: collapse;border-color: rgb(207, 206, 204);" >
+        <tr style="text-align: center;background-color: rgb(145, 142, 139);height: 40px;">
+            <th style="width: 230px;"></th>
+            <th style="width: 150px;">Strongly Disagree</th>
+            <th style="width: 150px;">Disagree</th>
+            <th style="width: 150px;">Agree</th>
+            <th style="width: 150px;">Strongly Agree</th>
+        </tr>
+        <tr style="text-align: center;height: 40px;">
+            <td style="text-align: left;width: 230px;"><b>Our products are priced fairly.</b></td>
+            <td><input type="radio" name="priced" value="strongdis" style="text-align: center;"></td>
+            <td><input type="radio" name="priced" value="dis" style="text-align: center;"></td>
+            <td><input type="radio" name="priced" value="agree" style="text-align: center;"></td>
+            <td><input type="radio" name="priced" value="strongagr" style="text-align: center;"></td>
+        </tr>
+        <tr style="text-align: center;background-color: rgb(185, 185, 180);height: 40px;">
+            <td style="text-align: left;width: 230px;"><b>Our products are high quality.</b></td>
+            <td><input type="radio" name="quality" value="strongdis"></td>
+            <td><input type="radio" name="quality" value="dis"></td>
+            <td><input type="radio" name="quality" value="agree"></td>
+            <td><input type="radio" name="quality" value="strongagr"></td>
+        </tr>
+        <tr style="text-align: center;height: 40px;">
+            <td style="text-align: left;width: 230px;"><b>You would recommend out products to a friend or coworker.</b></td>
+            <td><input type="radio" name="recommend" value="strongdis" style="text-align: center;"></td>
+            <td><input type="radio" name="recommend" value="dis" style="text-align: center;"></td>
+            <td><input type="radio" name="recommend" value="agree" style="text-align: center;"></td>
+            <td><input type="radio" name="recommend" value="strongagr" style="text-align: center;"></td>
+        </tr>
+    </table>
+    <br>
+        <div style="text-align: right;">
+        <button type="button">Submit</button>
+      </div>
+    </fieldset>
+    </form>
+</body>
+</html>
