@@ -1,0 +1,17 @@
+.meo{
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    /* perspective: 1000px; */
+}
+img{
+    opacity: 1;
+    transition: 1s;
+    width: 400px;
+    height: 400px;
+}
+.meo:hover img{
+    opacity: 0;
+    transform: rotate(360deg) scale(1.3) translateX(200px);
+    /* transform: translateZ(100px); */
+}

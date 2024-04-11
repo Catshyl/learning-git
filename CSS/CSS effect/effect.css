@@ -1,0 +1,64 @@
+a:link{
+    /* màu của đường link */
+    color: rgb(9, 243, 59);
+}
+a:hover{
+    /* khi di chuột qua sẽ đổi màu */
+    color: aqua;
+}
+a:visited{
+    /* sau khi click vào link sẽ đổi màu */
+    color: rgb(244, 248, 9);
+}
+a:active{
+    /* trong khi đang clack vào link sẽ đổi màu */
+    color: rgb(248, 9, 196);
+}
+.box_1{
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+}
+.box_1:hover{
+    /* khi di chuột qua sẽ đổi màu background */
+    background-color: blueviolet;
+}
+.Example_1 p b:first-child{
+    color: greenyellow;
+}
+.Example_2 p:first-child b{
+    color: slateblue;
+    margin-bottom: 20px;
+}
+.bamboo{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+img{
+    transition: 1s;
+    left: 0px;
+    opacity: 0;
+}
+.bamboo:hover img{
+    /* dùng position để xác định vị trí để display, nếu ko có sẽ ko hoạt động */
+    position: relative;
+    display: block;
+    left: 200px;
+    opacity: 1;
+}
+.meo{
+    margin-top: 400px;
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+}
+img{
+    opacity: 1;
+    margin-left: 0;
+}
+.meo:hover img{
+    opacity: 0;
+    margin-left: 200px;
+}
