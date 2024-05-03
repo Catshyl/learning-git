@@ -67,7 +67,7 @@ div{
     border: 2px solid black;
     margin-right: 5px;
 }
-.main_content_news{
+.main_content_news1,.main_content_news2,.main_content_news3,.main_content_news4,.main_content_news5,.main_content_news6{
     width: 30%;
     height: 150px;
     float: left;
@@ -105,4 +105,48 @@ div{
     height: 100px;
     float: left;
     border: 2px solid black;
+}
+@media only screen and (max-width: 1200px){
+    .head_logo{
+        display: none;
+    }
+    .head_banner{
+        width: 100%;
+    }
+    .main_sidebar{
+        display: none;
+    }
+    .main_content{
+        width: 73%;
+    }
+    .main_content_news1,.main_content_news2,.main_content_news3,.main_content_news4,.main_content_news5,.main_content_news6{
+        width: 45%;
+    }
+    .footer{
+        margin-top: 150px;
+    }
+}
+@media only screen and (max-width: 600px){
+    .head_banner{
+        display: none;
+    }
+    .head_logo{
+        display: block;
+        width: 100%;
+    }
+    .main_poster{
+        display: none;
+    }
+    .main_sidebar{
+        display: none;
+    }
+    .main_content{
+        width: 100%;
+    }
+    .main_content_news1,.main_content_news2,.main_content_news3,.main_content_news4,.main_content_news5,.main_content_news6{
+        width: 95%;
+    }
+    .footer{
+        margin-top: 635px;
+    }
 }

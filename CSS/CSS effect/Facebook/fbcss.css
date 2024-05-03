@@ -155,11 +155,11 @@ body{
     float: inline-start;
 }
 .main_content_status{
-    width: 500px;
+    width: 80%;
     height: 170px;
     border: 1px solid black;
     padding-top: 15px;
-    margin-left: 70px;
+    margin-left: 60px;
     border-radius: 15px;
 }
 .main_content_status_avatar{
@@ -169,28 +169,28 @@ body{
     margin-left: 10px;
 }
 .main_content_status_text{
-    width: 380px;
+    width: 75%;
     height: 50px;
     border-radius: 15px;
     float: left;
     margin-left: 15px;
     padding-left: 20px;
 }.main_content_live{
-    width: 150px;
+    width: 30%;
     height: 60px;
     float: left;
     margin-top: 30px;
     margin-left: 10px;
 }
 .main_content_library{
-    width: 150px;
+    width: 30%;
     height: 60px;
     float: left;
     margin-top: 30px;
     margin-left: 10px;
 }
 .main_content_emo{
-    width: 150px;
+    width: 30%;
     height: 60px;
     float: left;
     margin-top: 30px;
@@ -202,10 +202,10 @@ body{
     box-shadow: 1px 0px 9px 1px rgba(23,203,235,1);
 }
 .main_new{
-    width: 500px;
+    width: 80%;
     height: 400px;
     border: 1px solid black;
-    margin-left: 70px;
+    margin-left: 60px;
     border-radius: 15px;
     margin-top: 10px;
 }
@@ -240,13 +240,16 @@ body{
     }
 }
 @media only screen and (max-width: 600px){
-    .main_sidebar{
-        display: none;
-    }
     .main_content{
         width: 100%;
     }
     .main_contact{
         display: none;
+    }
+    .main_content_new4{
+        display: none;
+    }
+    .main_content_live,.main_content_library,.main_content_emo{
+        width: 15%;
     }
 }
