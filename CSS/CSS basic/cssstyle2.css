@@ -106,6 +106,7 @@ div{
     float: left;
     border: 2px solid black;
 }
+/* thay đổi khi resolution của trang web còn 1200px */
 @media only screen and (max-width: 1200px){
     .head_logo{
         display: none;
@@ -126,6 +127,7 @@ div{
         margin-top: 150px;
     }
 }
+/* thay đổi tiếp RWD của trang web khi resolution còn 600px */
 @media only screen and (max-width: 600px){
     .head_banner{
         display: none;

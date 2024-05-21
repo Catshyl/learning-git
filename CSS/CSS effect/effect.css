@@ -11,7 +11,7 @@ a:visited{
     color: rgb(244, 248, 9);
 }
 a:active{
-    /* trong khi đang clack vào link sẽ đổi màu */
+    /* trong khi đang click vào link sẽ đổi màu */
     color: rgb(248, 9, 196);
 }
 .box_1{
