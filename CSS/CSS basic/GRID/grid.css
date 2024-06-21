@@ -1,0 +1,29 @@
+.main {
+    display: grid;
+    height: 600px;
+    width: 100%;
+    /* tạo hiển thị dạng lưới */
+    grid-template-columns: 100px 100px 100px 100px;
+    /* chiều ngang của các phần tử, số lượng cột tương ứng với số đơn vị */
+    grid-template-rows: 100px 100px 100px;
+    /* chiều cao của các phần tử trong các hàng, số lượng hàng tương ứng với số đơn vị*/
+    gap: 5px;
+    /* khoảng cách giữa các phần tử */
+    justify-content: center;
+    /* đưa các phần tử về giữa theo hàng ngang*/
+    align-content: center;
+    /* đưa các phần tử về giữa theo hàng dọc */
+    background-color: aqua;
+}
+
+.phu {
+    border: 1px solid black;
+    background-color: aliceblue;
+}
+
+.sub1{
+    grid-column: 1/3; 
+    /* phần tử chiếm từ cột 1 đến trước cột 3 (hết cột 2) */
+    grid-row: 1/3;
+    /* phần tử chiến từ hàng 1 đến trước hàng 3 (hết hàng 2) */
+}
